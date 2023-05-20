@@ -1,0 +1,42 @@
+<div class="container-fluid" style="margin-left: 50px;">
+  <div class="row">
+    <h2>Listado de equipos</h2>
+  </div>
+  <div class="row" id="tableDiv">
+    <div class="col-6">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Equipo </th>
+            <th scope="col">Partidos ganados</th>
+            <th scope="col">Partidos empatados</th>
+            <th scope="col">Partidos perdidos</th>
+            <th scope="col">Putnos conseguidos</th>
+          </tr>
+        </thead>
+        <tbody id="partidos">
+          <tr *ngFor="let e of equipos" class="equipoItem">
+            <td>
+              <dd class="equipoID">{{e.id}}</dd>
+            </td>
+            <td>
+              <dd class="equipo">{{e.country}}</dd>
+            </td>
+            <td>
+              <dd>{{e.wins}}</dd>
+            </td>
+            <td>
+              <dd>{{e.draws}}</dd>
+            </td>
+            <td>
+              <dd>{{e.losses}}</dd>
+            </td>
+            <td>
+              <dd>{{e.group_points}}</dd>dd>
+            </td>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
