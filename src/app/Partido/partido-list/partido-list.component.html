@@ -1,3 +1,49 @@
-<p>
-  partido-list works!
-</p>
+<div class="container-fluid" style="margin-left: 50px;">
+  <div class="row">
+    <h2>Listado de partidos</h2>
+  </div>
+  <div class="row" id="tableDiv">
+    <div class="col-6">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Equipo Local</th>
+            <th scope="col">Equipo Visitante</th>
+            <th scope="col">Estadio</th>
+            <th scope="col">Ganador</th>
+          </tr>
+        </thead>
+        <tbody id="partidos">
+          <tr *ngFor="let p of partidos" class="partidoItem">
+            <td>
+              <dd class="partidoID">{{p.id}}</dd>
+            </td>
+            <td>
+              <dd class="partidoFase">{{p.home_team_country}}</dd>
+            </td>
+            <td>
+              <dd>{{p.away_team_country}}</dd>
+            </td>
+            <td>
+              <dd>{{p.location}}</dd>
+            </td>
+            <td>
+              <dd>{{p.winner}}</dd>
+            </td>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    <h2>Países con mas goles marcados de local</h2>
+  </div>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">País</th>
+        <th scope="col">Goles Marcados de Local</th>
+      </tr>
+    </thead>
+  </table>
+</div>

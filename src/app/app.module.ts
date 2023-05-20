@@ -5,6 +5,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PartidoModule } from './Partido/Partido.module';
+import { EquipoModule } from './Equipo/Equipo.module';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -13,6 +15,7 @@ import { PartidoModule } from './Partido/Partido.module';
     BrowserModule,
     AppRoutingModule,
     PartidoModule,
+    EquipoModule,
     HttpClientModule
   ],
   providers: [],
